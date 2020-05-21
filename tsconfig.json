@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "pretty": true,
+    "strict": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": false,
+    "checkJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "baseUrl": "./",
+    "paths": {
+      "^*": ["./src*"],
+    }
+  },
+  "typeRoots": ["node_modules/@types/", "src/@types/"],
+  "include": ["src/"]
+}
+
