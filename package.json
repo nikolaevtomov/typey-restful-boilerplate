@@ -4,8 +4,8 @@
   "description": "a better typescript restful api project",
   "main": "src/index.ts",
   "scripts": {
-    "serve": "cross-env NODE_ENV=production nodemon dist/bundle.js",
-    "start": "cross-env NODE_ENV=development DEBUG=true webpack --watch --mode development",
+    "start": "nodemon dist/bundle.js",
+    "start:dev": "cross-env NODE_ENV=development DEBUG=true webpack --watch --mode development",
     "build:clean": "rm -rf dist && mkdir dist",
     "build:js": "cross-env NODE_ENV=production DEBUG=false webpack --progress --colors",
     "build:all": "npm run build:clean && npm run build:js",
