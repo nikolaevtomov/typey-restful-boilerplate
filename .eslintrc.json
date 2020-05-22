@@ -1,0 +1,52 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "extends": [
+    "eslint-config-prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/standard",
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "settings": {},
+  "rules":{
+    "prettier/prettier": 2,
+
+    "strict": [2, "global"],
+    "no-duplicate-imports": [2, { "includeExports": true }],
+    "no-undef": 2,
+    "no-undef-init": 2,
+    "no-unreachable": 2,
+    "no-unused-vars": 2,
+    "no-use-before-define": 2,
+    "no-nested-ternary": 2,
+    "no-dupe-keys": 2,
+    "no-extra-boolean-cast": 2,
+    "no-irregular-whitespace": 2,
+    "no-else-return": 2,
+    "no-eval": 2,
+    "no-var": 2,
+    "no-multi-str": 2,
+    "no-self-compare": 2,
+
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/type-annotation-spacing": 0,
+    "@typescript-eslint/no-unused-vars": 2
+  }
+}
