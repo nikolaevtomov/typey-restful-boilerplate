@@ -6,7 +6,7 @@ const { PORT = 3000 } = process.env;
 app.get('/', (_req: Request, res: Response) => {
   res.send({
     message: 'Hello world!',
-  })
+  });
 });
 
 app.listen(PORT, () => {
