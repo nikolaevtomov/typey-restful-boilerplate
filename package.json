@@ -10,10 +10,10 @@
     "build:js": "cross-env NODE_ENV=production DEBUG=false webpack --progress --colors",
     "build:all": "npm run build:clean && npm run build:js",
     "build": "npm run build:all",
-    "prettier": "prettier --write '*/*.{ts,tsx,js,jsx,css,less,json}'",
+    "prettier": "prettier --write '*/*.{ts,js,css,less,json}'",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "lint": "tsc --noEmit && eslint 'src/*.{ts,tsx,js,jsx,css,less,json}' --quiet --fix",
-    "test": "mocha -require ts-node/register 'src/**/*.spec.{ts,tsx,js,jsx}'"
+    "lint": "tsc --noEmit && eslint 'src/*.{ts,js,css,less,json}' --quiet --fix",
+    "test": "mocha -require ts-node/register 'src/**/*.spec.{ts,js}'"
   },
   "dependencies": {
     "@babel/core": "^7.8.4",
