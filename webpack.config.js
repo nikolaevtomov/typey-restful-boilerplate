@@ -50,7 +50,7 @@ module.exports = {
   output: {
     publicPath: path.resolve(CWD, '/'),
     path: path.resolve(CWD, 'dist'),
-    filename: ISDEV ? 'bundle.js' : 'bundle.js',
+    filename: 'bundle.js',
   },
 
   devtool: ISDEV ? 'cheap-source-map' : 'cheap-module-source-map',
