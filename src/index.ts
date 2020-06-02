@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use('/api', router);
 
 app.use((_req: Request, res: Response) => {
-  res.status(404).send('<p>Page not found</p>');
+  res.status(404).send({ error: 'Page not found' });
 });
 
 app.listen(PORT, () => {
