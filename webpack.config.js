@@ -19,7 +19,7 @@ const BABEL_BASE_PRESETS = [
       useBuiltIns: 'usage',
       corejs: { version: 3 },
     },
-  ]
+  ],
 ];
 
 const BABEL_BASE_PLUGINS = [
@@ -107,7 +107,6 @@ module.exports = {
           output: null,
           toplevel: false,
           nameCache: null,
-          // eslint-disable-next-line @typescript-eslint/camelcase
           keep_fnames: false,
         },
       }),
@@ -141,5 +140,3 @@ module.exports = {
         ],
   ),
 };
-
-
